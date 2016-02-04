@@ -1,0 +1,22 @@
+<nav class="mmrk-nav">
+  <h1 class="mmrk-contact__header">{{menu.header}}</h1>
+  {{#each menu.links}}
+      <li class="mmrk-nav__item">
+          <a href="{{url}}">{{text}}</a>
+      </li>
+  {{/each}}
+</nav>
+
+<section class="mmrk-nav">
+  <h1 class="mmrk-contact__header">{{contact.header}}</h1>
+  <a href="email:{{contact.email}}" class="mmrk-contact__email">{{contact.email}}</a>
+    <a href="tel:{{contact.phone}}" class="mmrk-contact__phone">{{contact.phone}}</a>
+  <ul class="mmrk-contact__list">
+    {{#each contact.links}}
+        <li class="mmrk-nav__item">
+            <a href="{{url}}" target="_blank" class="link__icon icon--{{type}}"></a>
+        </li>
+    {{/each}}
+  </ul>
+</section>
+

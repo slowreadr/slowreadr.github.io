@@ -1,0 +1,36 @@
+$grey : hsla(0, 0%, 93%, 1) ;
+
+@import "variables";
+
+@import "base/normalize";
+@import "base/reset";
+@import "base/shared";
+@import "base/images";
+@import "base/lists";
+
+@import "components/menu";
+
+#js-app {
+  font-size: 20px;
+}
+
+body {
+  display: table; /* [1] */
+  width: 100%; /* [2] */
+
+  > * {
+    display: table-cell;
+  }
+}
+
+#js-nav {
+  background: $grey url(../static/images/mattmark-logo.jpg) no-repeat center 4rem;
+  padding: 10rem 2rem 2rem;
+  height: 100vh;
+  width: 17.5rem;
+}
+
+#js-app {
+  padding: 4rem 2rem 2rem;
+  height: 100vh;
+}
