@@ -1,0 +1,27 @@
+/*------------------------------------*\
+    $LISTS
+\*------------------------------------*/
+/**
+ * Remove vertical spacing from nested lists.
+ */
+li {
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
+}
+
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+/**
+ * Have a numbered `ul` without the semantics implied by using an `ol`.
+ */
+/*ul*/
+.numbered-list {
+  list-style-type: decimal;
+}

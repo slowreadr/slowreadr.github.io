@@ -1,0 +1,9 @@
+.#{$namspace}grid,
+%#{$namspace}grid {
+  display: table; /* [1] */
+  width: 100%; /* [2] */
+
+  > * {
+    display: table-cell;
+  }
+}
